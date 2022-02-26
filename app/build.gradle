@@ -8,13 +8,12 @@ android {
 
     defaultConfig {
         applicationId "com.example.myapplication"
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        multiDexEnabled true
     }
 
     buildTypes {
@@ -54,4 +53,7 @@ dependencies {
 
     // Google services
     implementation 'com.google.android.gms:play-services-location:19.0.1'
+
+    // Lifecycle
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
 }
